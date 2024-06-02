@@ -1,0 +1,27 @@
+
+let nftCollection = [];
+
+function mintNFT(name, description, owner, date) {
+    const nft = {
+        name,
+        description,
+        owner,
+        minted_on: date
+    };
+    nftCollection.push(nft); 
+}
+
+function listNFTs() {
+    console.log("List of the minted NFTs:");
+    for (let i = 0; i < nftCollection.length; i++) {
+    console.log(nftCollection[i]);
+    }
+}
+
+function getTotalSupply() {
+    return nftCollection.length;
+}
+mintNFT("NFT 1", "This is the first NFT", "Owner1", "2023-06-01");
+mintNFT("NFT 2", "This is the second NFT", "Owner2", "2023-06-02");
+listNFTs();
+console.log(`Total Supply: ${getTotalSupply()}`);
