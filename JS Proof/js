@@ -1,6 +1,4 @@
-
 let nftCollection = [];
-
 function mintNFT(name, description, owner, date) {
     const nft = {
         name: name,
@@ -8,21 +6,23 @@ function mintNFT(name, description, owner, date) {
         owner: owner,
         minted_on: date
     };
-    nftCollection.push(nft); 
+    nftCollection.push(nft);
 }
 
 function listNFTs() {
     console.log("List of the minted NFTs:");
     for (let i = 0; i < nftCollection.length; i++) {
-    console.log(nftCollection[i]);
+        console.log(nftCollection[i]);
     }
 }
 
-function getTotalSupply() {
+function nftslength() {
     return nftCollection.length;
 }
-mintNFT("NFT 1", "This is the first NFT", "Owner1", "2023-06-01");
-mintNFT("NFT 2", "This is the second NFT", "Owner2", "2023-06-02");
-mintNFT("NFT 3", "This is the third NFT", "Owner3", "2023-06-03");
+
+mintNFT("NFT 1", "first NFT", "Owner1", "2024-04-11");
+mintNFT("NFT 2", "second NFT", "Owner2", "2024-05-23");
+mintNFT("NFT 3", "third NFT", "Owner3", "2024-06-13");
+
 listNFTs();
-console.log(`Total Supply: ${getTotalSupply()}`);
+console.log(`Total Supply: ${nftslength()}`);
