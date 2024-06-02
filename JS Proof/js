@@ -3,9 +3,9 @@ let nftCollection = [];
 
 function mintNFT(name, description, owner, date) {
     const nft = {
-        name,
-        description,
-        owner,
+        name: name,
+        description: description,
+        owner: owner,
         minted_on: date
     };
     nftCollection.push(nft); 
