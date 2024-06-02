@@ -23,5 +23,6 @@ function getTotalSupply() {
 }
 mintNFT("NFT 1", "This is the first NFT", "Owner1", "2023-06-01");
 mintNFT("NFT 2", "This is the second NFT", "Owner2", "2023-06-02");
+mintNFT("NFT 3", "This is the third NFT", "Owner3", "2023-06-03");
 listNFTs();
 console.log(`Total Supply: ${getTotalSupply()}`);
